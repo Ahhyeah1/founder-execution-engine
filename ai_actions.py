@@ -39,7 +39,7 @@ def generate_actions(goal_text: str, difficulty: int, history: str = "") -> List
         return offline_actions(goal_text, difficulty)
 
     try:
-        prompt = f\"""
+        prompt = f"""
 You are a ruthless operating manager. Generate 3–5 DAILY, NON-NEGOTIABLE actions for a founder.
 
 Rules:
@@ -52,7 +52,7 @@ Rules:
 GOAL: {goal_text}
 DIFFICULTY (1-5): {difficulty}
 HISTORY (brief): {history}
-\"""
+"""
         r = requests.post(
             "https://api.openai.com/v1/responses",
             headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},

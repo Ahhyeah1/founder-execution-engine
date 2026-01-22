@@ -9,14 +9,14 @@ from ai_actions import generate_actions
 st.set_page_config(page_title="Founder Execution Engine", layout="centered")
 
 st.markdown(
-    \"""
+    """
 <style>
 body { background-color: #0b0f14; color: #e6e6e6; }
 .block-container { padding-top: 2rem; max-width: 820px; }
 .stButton>button { width: 100%; border-radius: 10px; padding: 0.75rem; }
 small { opacity: 0.7; }
 </style>
-\""",
+""",
     unsafe_allow_html=True
 )
 
