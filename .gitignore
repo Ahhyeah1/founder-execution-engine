@@ -1,0 +1,19 @@
+﻿# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+.env
+
+# Streamlit
+.streamlit/
+
+# Local DB / state
+backend/engine.db
+*.db
+
+# OS
+.DS_Store
+Thumbs.db
